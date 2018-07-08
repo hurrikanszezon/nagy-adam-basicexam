@@ -1,1 +1,0 @@
-# nagy-adam-basicexam
