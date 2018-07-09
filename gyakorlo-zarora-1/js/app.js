@@ -51,9 +51,10 @@ function falconsToList(message, destination) {
 
 // Törli az objektumot, ha a consumables értéke null.
 function deleteByPropertyValue(array, property) {
-  for (var k in array) {
+  for (var k = 0; k < array.length; k++) {
     if (array[k][property] === null) {
       array.splice(k, 1);
+      k--;
     }
   }
   return array;
