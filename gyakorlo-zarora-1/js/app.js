@@ -188,6 +188,7 @@ function successAjax(xhttp) {
   falconsToList(displayArray(userDatas), '.spaceship-list');
   falconsToList(shipStats(userDatas), '.spaceship-list');
   falconsToList(linearSearchShip('tie', userDatas, 'model'), '.one-spaceship');
+  console.log(userDatas);
 }
 getData('/gyakorlo-zarora-1/json/spaceships.json', successAjax);
 
